@@ -5,29 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     
 
-<Script>
-    function SwitchButtons(buttonId) {
-        var hideBtn, showBtn;
-        if (buttonId == 'button1') {
-          showBtn = 'button2';
-          hideBtn = 'button1';
-        } else {
-          showBtn = 'button1';
-          hideBtn = 'button2';}
-        }
- 
-        </Script>
+<script type="text/javascript">
+function SwitchButtons(buttonId) {
+  var hideBtn, showBtn;
+  if (buttonId == '#button1') {
+    showBtn = '#button2';
+    hideBtn = '#button1';
+  } else {
+    showBtn = '#button1';
+    hideBtn = '#button2';
+  }
+}
+        </script>
 
+<!--
+<script>
+    $('#button1').on('click', function() {
+  $('#button1').addClass('hidden');
+  //or
+  $('#button2').removeClass('hidden');
+});
+</script>
+-->
 
 <button id="button1" onclick="SwitchButtons('button1');" 
-class="sideviewtoggle myButton">Test 1</button>
+class="">Test 1</button>
 
 <button id="button2" onclick="SwitchButtons('button2');" 
-class="sideviewtoggle myButton" style='display:none;'>Test 2</button>
+class="" style='display:none;'>Test 2</button>
 
 
 
