@@ -8,5 +8,29 @@
 </head>
 <body>
     
+
+<Script>
+    function SwitchButtons(buttonId) {
+        var hideBtn, showBtn, menuToggle;
+        if (buttonId == 'button1') {
+          menuToggle = 'menu2';
+          showBtn = 'button2';
+          hideBtn = 'button1';
+        } else {
+          menuToggle = 'menu3';
+          showBtn = 'button1';
+          hideBtn = 'button2';
+        </Script>
+
+
+<button id="button1" onclick="SwitchButtons('button1');" 
+class="sideviewtoggle myButton">Test 1</button>
+
+<button id="button2" onclick="SwitchButtons('button2');" 
+class="sideviewtoggle myButton" style='display:none;'>Test 2</button>
+
+
+
+
 </body>
 </html>
